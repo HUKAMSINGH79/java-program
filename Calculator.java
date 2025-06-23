@@ -38,7 +38,6 @@ public class Calculator {
         return Math.sqrt(a);
     }
 
-    // Reusable input method with label
     public static double getNumberInput(Scanner scanner, String prompt) {
         System.out.print(prompt);
         return scanner.nextDouble();
