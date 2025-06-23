@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class Calculator {
 
-    // Operation Methods
     public static double add(double a, double b) {
         return a + b;
     }
@@ -45,7 +44,6 @@ public class Calculator {
         return scanner.nextDouble();
     }
 
-    // Main Program
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         boolean continueCalculation = true;
@@ -100,10 +98,8 @@ public class Calculator {
             }
 
             System.out.println("Result: " + result);
-
-            // Ask for another calculation
             System.out.print("\nDo you want to perform another calculation? (yes/no): ");
-            scanner.nextLine(); // consume newline
+            scanner.nextLine();
             String again = scanner.nextLine();
             continueCalculation = again.equalsIgnoreCase("yes");
         }
